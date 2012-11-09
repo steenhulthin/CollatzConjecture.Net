@@ -58,7 +58,7 @@ namespace CollatzConjecture
         [Test]
         public void TestThatTheSequenceToOneReturnsOneIfNumberIsOne()
         {
-            Assert.That(new Collatz().SequenceToCollatzNumberOne(1), Is.AssignableTo<IEnumerable<int>>());
+            Assert.That(new Collatz().SequenceToCollatzNumberOne(1), Is.AssignableTo<IEnumerable<ulong>>());
             Assert.That(new Collatz().SequenceToCollatzNumberOne(1).First(), Is.EqualTo(1));
         }
 
@@ -73,21 +73,21 @@ namespace CollatzConjecture
 
     public class Collatz
     {
-        public int StepsToCollatzNumberOneRecursive(int i)
+        public  ulong StepsToCollatzNumberOneRecursive(ulong i)
         {
             if(i == 1)
                 return 0;
             return 1 + StepsToCollatzNumberOneRecursive(NextNumber(i));
         }
 
-        public int NextNumber(int i)
+        public ulong NextNumber(ulong i)
         {
             return i % 2 == 0 ? i / 2 : (3 * i) + 1;
         }
 
-        public int StepsToCollatzNumberOneNonRecursive(int i)
+        public ulong StepsToCollatzNumberOneNonRecursive(ulong i)
         {
-            var steps = 0;
+            var steps = 0UL;
             while (i > 1)
             {
                 steps++;
@@ -97,18 +97,18 @@ namespace CollatzConjecture
         }
 
 
-        public IEnumerable<int> SequenceToCollatzNumberOne(int i)
+        public IEnumerable<ulong> SequenceToCollatzNumberOne(ulong i)
         {
-            var ints = new List<int>();
+            var ulongs = new List<ulong>();
 
-            ints.Add(i);
+            ulongs.Add(i);
             while (i > 1)
             {
                 i = NextNumber(i);
-                ints.Add(i);
+                ulongs.Add(i);
             }
             
-            return ints;
+            return ulongs;
         }
     }
 }
