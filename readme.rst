@@ -12,9 +12,8 @@
 
 Install 
 =================
-#. Download the binary from the download tab (https://github.com/steenhulthin/CollatzConjecture.Net/downloads)
+#. Download the binary from the (new) download page (http://steen.hulthin.dk/opensource/CollatzConjecture.Net/downloads/CollatzConjecture.dll)
 #. Reference it in the project from which you would like to use it. 
-
 
 Features
 ==========
