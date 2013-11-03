@@ -28,6 +28,7 @@ This project uses AppVeyor_ as CI server.
 .. _AppVeyor: <http://www.appveyor.com/>
 
 Build Status: 
+
 |Build status|_
 
 .. |Build status| image:: https://ci.appveyor.com/api/projects/status?id=o7027vx4u273nba2
