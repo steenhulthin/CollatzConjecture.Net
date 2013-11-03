@@ -25,7 +25,7 @@ Build Status
 ============
 This project uses AppVeyor_ as CI server.
 
-.. _AppVeyor: <http://www.appveyor.com/>
+.. _AppVeyor: http://www.appveyor.com/
 
 Build Status: 
 
