@@ -21,3 +21,10 @@ Features
 #. Calculate number of step to 1 from a given number. 
 #. Calculate the number in each step in a sequenze from a given number.
 
+Build Status
+============
+This project uses AppVeyor_ as CI server.
+[![Build status](https://ci.appveyor.com/api/projects/status?id=o7027vx4u273nba2)](https://ci.appveyor.com/project/collatzconjecture-net)
+
+
+.. _<http://www.appveyor.com/>
