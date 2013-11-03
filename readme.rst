@@ -30,5 +30,5 @@ This project uses AppVeyor_ as CI server.
 Build Status: |Build status|_
 
 .. |Build status| image:: https://ci.appveyor.com/api/projects/status?id=o7027vx4u273nba2
-.. https://ci.appveyor.com/project/collatzconjecture-net
+.. _`Build status`: https://ci.appveyor.com/project/collatzconjecture-net
 
